@@ -5,13 +5,11 @@ import fs from "fs";
 
   console.log("Log test")
 
-  const result = [
-    {
-      notify: true,
-      result: 'OK',
-      result_html: "<div>Test sandbox checker</div><div>Result: OK</div>"
-    }
-  ];
+  const result = {
+    notify: true,
+    result: 'OK',
+    result_html: "<div>Test sandbox checker</div><div>Result: OK</div>"
+  };
 
   fs.writeFileSync("output.json", JSON.stringify(result));
 })();
